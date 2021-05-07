@@ -2,9 +2,8 @@ function wikianowLazyVideo(div) {
     var video = document.createElement('video');
     video.setAttribute(
       'src',
-      'https://cloud.phucuong13029x.workers.dev/0:/' + div.dataset.id); //edit link hosting
+      '[url hosting]' + div.dataset.id); //edit link hosting
     video.setAttribute('controls', ''); //properties can be changed or deleted
-    video.setAttribute('uk-video', ''); //properties can be changed or deleted
     div.parentNode.replaceChild(video, div);
   }
 
